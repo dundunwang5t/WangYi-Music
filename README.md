@@ -1,24 +1,11 @@
-# yanxuan
+### 根据网易云官方API仿制的网易云音乐
 
-## Project setup
-```
-npm install
-```
+##### 技术栈：vue2.0+vant2+vue-aplayer+axios
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+1、通过使用request对axios进行封装，将接口统一化管理，通过使用vue自带的proxy属性，进行数据代理，解决跨域问题。
 
-### Compiles and minifies for production
-```
-npm run build
-```
+2、通过使用vue-aplayer实现了音频播放功能，由于网易云官方接口并未提供歌曲url，所以即使能获取到歌曲信息，能播放的歌曲也只有自己设置的一首。
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+项目亮点：
+1.对热歌榜的音乐歌单和编辑推荐的歌单进行封装，并通过使用插槽的方式使得两个列表的歌名前的序号不同。
+2.通过使用了过滤器，对歌曲播放数进行了统一管理。# WangYi-Music
